@@ -17,7 +17,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html"><img src="assets/img/thu2.png" alt="" width="100" height="100"/></a>
+                <a href="index.html"><img src="assets/img/thu2.png" alt="" width="90" height="90"/></a>
             </div>
             <div class="menu">
                 <ul>
@@ -39,37 +39,29 @@
                 <div class="home-slider--wrapper__inner" style="background-image: url('assets/img/SG.jpg')">
                     <div class="container">
                         <!-- <h3>Mobile Robot Oriented Large-Scale Indoor Dataset for Dynamic Scene Understanding</h3> -->
-                        <h1>Task-driven Robotic Planning with Scene Graph</h1>
+                        <h1>GRID: Scene-Graph-based Instruction-driven Robotic Task Planning</h1>
                         <span class="dot-dash">.</span>
-                        <h3>Yi-Fan Tang†, Cong Tai†, Fang-Xing Chen†, Wan-Ting Zhang, Tao Zhang, Xue-Ping Liu, Yong-Jin Liu, Long Zeng∗</h3>
+                        <h3>Zhe Ni†, Xiao-Xin Deng†, Cong Tai†, Xin-Yue Zhu, Xiang Wu, Yong-Jin Liu, Long Zeng∗</h3>
                         <h3>Tsinghua university</h3>
-                        <p>Most existing robotic datasets capture static scenedata and thus are limited in evaluating robots’ dynamic performance. To address this, we present a mobile robot oriented largescale indoor dataset, denoted as THUD (Tsinghua University Dynamic) robotic dataset, for training and evaluating their dynamic scene understanding algorithms. Specifically, the THUD dataset construction is first detailed, including organization, acquisition, and annotation methods</p>
+                        <p>In this paper, we propose a novel
+                            approach called Graph-based Robotic Instruction Decomposer
+                            (GRID), leverages scene graph instead of image to perceive
+                            global scene information and continuously plans subtask in
+                            each stage for a given instruction. Our method encodes object
+                            attributes and relationships in graphs through an LLM and
+                            Graph Attention Networks, integrating instruction features to
+                            predict subtasks consisting of pre-defined robot actions and
+                            target objects in the scene graph. </p>
                         <div class="slider-buttons">
-                            <a href="https://cloud.tsinghua.edu.cn/seafhttp/files/efa866b4-5ab7-423f-8560-cbbb4c7ccc95/IdesignLab%20RGB_test.rar" class="button">Download Dataset</a>
-                            <a href="#" class="button button-w">Github</a>
+                            <a href="assets/TOS/THUD_Robotic_Dataset_TOS.pdf" class="button">Download Dataset</a>
+                            <a href="https://arxiv.org/abs/2309.07726" class="button button-w">PAPER</a>
+                            <a href="https://github.com/jackyzengl/GRID" class="button button-w">CODE</a>
+                            <a href="https://github.com/jackyzengl/GRID_Dataset" class="button button-w">DATASET</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <div>
-                <div class="home-slider--wrapper__inner" style="background-image: url('assets/img/Synthetic_Data.png')">
-                    <div class="container">
-                        <h3>Our clients are our first priority</h3>
-                        <h1>WELCOME TO LIKE 2</h1>
-                        <span class="dot-dash">.</span>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <div class="slider-buttons">
-                            <a href="#" class="button">Get Started Now</a>
-                            <a href="#" class="button button-w">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
-        <!-- <div class="home-slider--nav">
-            <div class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-            <div class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-        </div> -->
         <div class="home-slider--anchor">
             <span><i class="fa fa-anchor" aria-hidden="true"></i></span>
         </div>
@@ -81,23 +73,23 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="four-elements--image"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
-                        <h3>Sleek Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                        <h3>Great receptive field</h3>
+                        <p>we first introduce scene graphs to promote instruction driven robotic task planning via the graphs’ ability to understand wide-perspective and rich-semantic knowledge in the environment.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="four-elements--image"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
-                        <h3>Clean Code</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                        <h3>Accurate and powerful</h3>
+                        <p>We design a novel GAT-based network named GRID,which takes instruction,robot graph & scene graph as inputs and outperforms GPT-4 by over 43.6% in task accuracy.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="four-elements--image"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
-                        <h3>Creative Ideas</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                        <h3>Supporting dataset</h3>
+                        <p>We build a synthetic dataset construction pipeline to generate datasets of scene graphs for instruction-driven robotic task planning.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="four-elements--image"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
-                        <h3>Free Support</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                        <h3>Network lightweight</h3>
+                        <p>GRID network is lightweight and can be deployed locally, without relying on large cloud models.</p>
                     </div>
                 </div>
             </div>
@@ -122,47 +114,31 @@
             </div>
         </section> -->
 
-        <section class="our-history">
+        <!-- <section class="our-history">
             <div class="video-container">
                 <div class="video-wrapper">
                     <video controls width="70%" height="auto" class="rounded-video">
-                        <source src="assets/moive/dataset_v1.mp4" type="video/mp4">
+                        <source src="assets/moive/GRID.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
-        </section>
-        <!-- <section class="statistics">
-            <div class="container">
-                <div class="statistics--item">
-                    <div class="statistics--item__image"><i class="fa fa-heart-o"></i></div>
-                    <h3>8888</h3>
-                    <h5>User Favourites</h5>
-                </div>
-                <div class="statistics--item">
-                    <div class="statistics--item__image"><i class="fa fa-tag"></i></div>
-                    <h3 class="odometer second">0</h3>
-                    <h5>User Favourites</h5>
-                </div>
-                <div class="statistics--item">
-                    <div class="statistics--item__image"><i class="fa fa-thumbs-o-up"></i></div>
-                    <h3 class="odometer third">0</h3>
-                    <h5>User Favourites</h5>
-                </div>
-                <div class="statistics--item">
-                    <div class="statistics--item__image"><i class="fa fa-star-o"></i></div>
-                    <h3 class="odometer fourth">0</h3>
-                    <h5>User Favourites</h5>
-                </div>
-                <div class="statistics--item">
-                    <div class="statistics--item__image"><i class="fa fa-heart-o"></i></div>
-                    <h3>8888</h3>
-                    <h5>User Favourites</h5>
-                </div>
-            </div>
         </section> -->
+        <section class="our-history">
+            <div class="video-container">
+              <div class="video-wrapper">
+                <h1 class="video-title">Display Video:</h1>
+                <video controls width="70%" height="auto" class="rounded-video">
+                  <source src="assets/moive/GRID.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </section>
+
+
+
         <section class="statistics">
             <div class="container">
-                <div class="statistics--item">
+                <!-- <div class="statistics--item">
                     <div class="statistics--item__image"><i class="fa fa-thumbs-o-up"></i></div>
                     <h3>8</h3>
                     <h5>Real scene frames</h5>
@@ -186,18 +162,49 @@
                     <div class="statistics--item__image"><i class="fa fa-thumbs-o-up"></i></div>
                     <h3>8888</h3>
                     <h5>Semantic segmentation label</h5>
-                </div>
+                </div> -->
             </div>
         </section>
 
 
         <section class="image-section">
             <div class="image-wrapper">
+            <h1 class="pic-title">Network Structure:</h1>
               <img src="assets/img/ridsg.png" alt="Image 1">
             </div>
-            <!-- <div class="image-wrapper">
-              <img src="assets/img/real_exp.png" alt="Image 2">
-            </div> -->
+            <hr class="divider">
+        </section>
+
+        <section class="image-section">
+            <div class="image-wrapper">
+            <h1 class="pic-title-1">Feature Enhancer&Task Decoder:</h1>
+              <img src="assets/img/enhanser&decoder.png" alt="Image 1">
+            </div>
+            <hr class="divider">
+        </section>
+
+        <section class="image-section">
+            <div class="image-wrapper">
+            <h1 class="pic-title-2">Simulation system setup:</h1>
+              <img src="assets/img/fz_exp.png" alt="Image 1">
+            </div>
+            <hr class="divider">
+        </section>
+
+        <section class="image-section">
+            <div class="image-wrapper">
+            <h1 class="pic-title-2">Real machine deployment system setup:</h1>
+              <img src="assets/img/real_exp.png" alt="Image 1">
+            </div>
+            <hr class="divider">
+        </section>
+
+        <section class="image-section-to_ChatGPT4">
+            <div class="image-wrapper">
+            <h1 class="pic-title-2">response from chatGPT4 API:</h1>
+              <img src="assets/img/to_ChatGPT4.png" alt="Image 1">
+            </div>
+            <hr class="divider">
         </section>
 
         <section class="partners">
@@ -213,22 +220,12 @@
                     </div>
                     <div class="partners--item">
                         <div class="partners--item__image">
-                            <img src="assets/img/pudu.png" alt="">
+                            <img src="assets/img/shuju&xinxi.png" alt="">
                         </div>
                     </div>
                     <div class="partners--item">
                         <div class="partners--item__image">
-                            <img src="assets/img/thu3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="partners--item">
-                        <div class="partners--item__image">
-                            <img src="assets/img/pudu.png" alt="">
-                        </div>
-                    </div>
-                    <div class="partners--item">
-                        <div class="partners--item__image">
-                            <img src="assets/img/thu3.png" alt="">
+                            <img src="assets/img/immv_sigle.png" alt="">
                         </div>
                     </div>
                     <div class="partners--item">
@@ -238,22 +235,7 @@
                     </div>
                     <div class="partners--item">
                         <div class="partners--item__image">
-                            <img src="assets/img/thu3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="partners--item">
-                        <div class="partners--item__image">
-                            <img src="assets/img/pudu.png" alt="">
-                        </div>
-                    </div>
-                    <div class="partners--item">
-                        <div class="partners--item__image">
-                            <img src="assets/img/thu3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="partners--item">
-                        <div class="partners--item__image">
-                            <img src="assets/img/pudu.png" alt="">
+                            <img src="assets/img/pudu_tech.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -263,12 +245,14 @@
         <section class="get-started">
             <div class="container">
                 <h2>If you use the ScanNet data or code please cite:</h2>
-                <p>@inproceedings{2023ICRA,<br>
-                    title={Mobile Robot Oriented Large-Scale Indoor Dataset for Dynamic Scene Understanding},<br>
-                    author={AASAAA},<br>
-                    booktitle = {(ICRA), IEEE},<br>
-                    year = {2023}
-                }<br></p>
+                <p>@misc{ni2023grid,<br>
+                    title={GRID: Scene-Graph-based Instruction-driven Robotic Task Planning}, <br>
+                    author={Zhe Ni and Xiao-Xin Deng and Cong Tai and Xin-Yue Zhu and Xiang Wu and Yong-Jin Liu and Long Zeng},<br>
+                    year={2023},<br>
+                    eprint={2309.07726},<br>
+                    archivePrefix={arXiv},<br>
+                    primaryClass={cs.RO}}<br>
+              </p>
                 <a href="#" class="button">full papers</a>
             </div>
         </section>
