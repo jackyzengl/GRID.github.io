@@ -40,6 +40,24 @@ ul, li {
     align-items: center;
     height: 100vh;
 }
+.video-title {
+  margin-right: 0%;
+}
+.pic-title {
+  margin-right: 0%;
+}
+.pic-title-1 {
+  margin-right: 0%;
+}
+.pic-title-2 {
+  margin-right: 0%;
+}
+.divider {
+  width: 80%;
+  background-color: gray;
+  height: 1px;
+  border: none;
+}
 
 a, a:hover, button, button:hover, .btnborder, .btntop {
   -webkit-transition: all 0.3s ease-in-out;
@@ -56,7 +74,7 @@ a, a:hover, button, button:hover, .btnborder, .btntop {
   font: 600 14px/1 "Open Sans";
   background: #3c88e7;
   color: #ffffff;
-  margin: 0 24px 0 0;
+  margin: 0 0 0 0;
   border-radius: 4px;
   text-transform: uppercase;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -162,13 +180,27 @@ a, a:hover, button, button:hover, .btnborder, .btntop {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   flex-direction: column; /* 将弹性容器的排列方向设置为纵向 */
 }
-
+.image-section-to_ChatGPT4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column; /* 将弹性容器的排列方向设置为纵向 */
+}
+.image-section-long {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140vh;
+  flex-direction: column; /* 将弹性容器的排列方向设置为纵向 */
+}
 .image-wrapper {
   text-align: center;
-  margin-bottom: 20px; /* 可根据需要调整图片之间的间距 */
+
+  margin-bottom: 0px; /* 可根据需要调整图片之间的间距 */
 }
 
 .image-wrapper:last-child {
@@ -176,9 +208,10 @@ a, a:hover, button, button:hover, .btnborder, .btntop {
 }
 
 .image-wrapper img {
-  max-width: 85%;
+  max-width: 78%;
   max-height: auto;
 }
+
 
 .our-history {
   padding: 140px 0; }
@@ -916,7 +949,7 @@ a, a:hover, button, button:hover, .btnborder, .btntop {
   position: relative;
   overflow: hidden;
   color: #ffffff;
-  background-image: url("../assets/img/Synthetic_Data.png");
+  background-image: url("../assets/img/immv.PNG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
