@@ -44,7 +44,7 @@
                         <h3>Zhe Ni†, Xiao-Xin Deng†, Cong Tai†,<br>
                             Xin-Yue Zhu, Qinghongbing Xie, Weihang Huang, Xiang Wu, Long Zeng∗</h3>
                         <h3>Tsinghua university</h3>
-                        <p>In this paper, we propose a novel
+                        <!-- <p>In this paper, we propose a novel
                             approach called Graph-based Robotic Instruction Decomposer
                             (GRID), leverages scene graph instead of image to perceive
                             global scene information and continuously plans subtask in
@@ -52,7 +52,22 @@
                             attributes and relationships in graphs through an LLM and
                             Graph Attention Networks, integrating instruction features to
                             predict subtasks consisting of pre-defined robot actions and
-                            target objects in the scene graph. </p>
+                            target objects in the scene graph. </p> -->
+                            <p>In this paper, we propose a novel approach
+                                called Graph-based Robotic Instruction Decomposer (GRID),
+                                which leverages scene graphs instead of images to perceive
+                                global scene information and iteratively plan subtasks for a
+                                given instruction. Our method encodes object attributes and
+                                relationships in graphs through an LLM and Graph Attention
+                                Networks, integrating instruction features to predict subtasks
+                                consisting of pre-defined robot actions and target objects in the
+                                scene graph. This strategy enables robots to acquire semantic
+                                knowledge widely observed in the environment from the scene
+                                graph. To train and evaluate GRID, we establish a dataset
+                                construction pipeline to generate synthetic datasets for graph 
+                                based robotic task planning. Experiments have shown that our
+                                method outperforms GPT-4 by over 25.4% in subtask accuracy
+                                and 43.6% in task accuracy.</p>
                         <div class="slider-buttons">
                             <!-- <a href="assets/TOS/THUD_Robotic_Dataset_TOS.pdf" class="button">Download Dataset</a> -->
                             <a href="https://arxiv.org/abs/2309.07726" class="button button-w">PAPER</a>
@@ -179,6 +194,31 @@
 
 
         <section class="image-section">
+            <h3 class="special-heading">Unlike previous works, we utilize scene graphs to rep resent 
+                the environment for robotic task planning. In scene graphs, 
+                objects and their relationships within a scene are structured 
+                into graph nodes and edges. To provide a precise portrayal of 
+                the robot’s status, we separate the robot from
+                the scene graph to create a robot graph, which contains the
+                robot’s location, nearby objects, and grasped objects. We
+                introduce a lightweight transformer-based model GRID, de signed 
+                for deployment on offline embodied agents. As illus-
+                trated, the model takes instruction, scene graph, and
+                robot graph as inputs, subsequently determining the subtask
+                for the robot to execute. In GRID, the instruction and both
+                graphs are mapped into a unified latent space by a shared 
+                weight LLM encoder named INSTRUCTOR. Then
+                the encoded graph nodes and their relationships are refined
+                by graph attention network (GAT) modules. Integrating the
+                outputs from GAT and the encoded instruction with a cross 
+                attention-based feature enhancer, the resultant enhanced fea 
+                tures are fed into a transformer-based task decoder to yield
+                the robot subtask. Compared with the holistic sentence form,
+                our subtask expressed as (action)-(object) pair form
+                requires less enumeration to cover diverse object categories.
+                GRID iteratively plans the subtask, enabling it to respond
+                to real-time scene changes and human interference, thereby
+                correcting unfinished tasks.</h3>
             <div class="image-wrapper">
             <h1 class="pic-title">Network Structure:</h1>
               <img src="assets/img/ridsg.png" alt="Image 1">
@@ -218,15 +258,20 @@
             <hr class="divider">
         </section>
 
-        <section class="image-section-to_ChatGPT4">
+        <!-- <section class="image-section-to_ChatGPT4">
             <div class="image-wrapper">
             <h1 class="pic-title-2">Number of objects in each scene:</h1>
               <img src="assets/img/Number_of_objects.png" alt="Image 1">
             </div>
             <hr class="divider">
-        </section>
+        </section> -->
 
         <section class="image-section-to_ChatGPT4_list">
+            <h3 class="special-heading">we compare our model with GPT-4 and validate the
+                effectiveness of two key modules through ablation studies.
+                We also explore the generalization ability of the model with
+                different datasets. Finally, we demonstrate our approach both
+                in the simulation environment and the real world.</h3>
             <div class="image-wrapper">
             <h1 class="pic-title-2">Comparison between GRID and LLM-As-Planner on datasets<br> 
                 with different numbers of objects in each scene:</h1>
