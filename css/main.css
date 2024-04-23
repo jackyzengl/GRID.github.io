@@ -180,21 +180,28 @@ a, a:hover, button, button:hover, .btnborder, .btntop {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: auto;
   flex-direction: column; /* 将弹性容器的排列方向设置为纵向 */
 }
 .image-section-to_ChatGPT4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: auto;
+  flex-direction: column; /* 将弹性容器的排列方向设置为纵向 */
+}
+.image-section-to_ChatGPT4_list {/* 高度比较短的表 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
   flex-direction: column; /* 将弹性容器的排列方向设置为纵向 */
 }
 .image-section-long {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 140vh;
+  height: auto;
   flex-direction: column; /* 将弹性容器的排列方向设置为纵向 */
 }
 .image-wrapper {
@@ -211,7 +218,15 @@ a, a:hover, button, button:hover, .btnborder, .btntop {
   max-width: 78%;
   max-height: auto;
 }
-
+.special-heading {
+  text-indent: 2em;
+  color: black;
+  text-align: justify;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+}
 
 .our-history {
   padding: 140px 0; }
@@ -753,7 +768,8 @@ a, a:hover, button, button:hover, .btnborder, .btntop {
       -ms-flex-pack: center;
       justify-content: center;
       padding: 25px;
-      height: 100px;
+      height: 120px;
+      width: auto;
       -webkit-box-shadow: 0 2px 5px rgba(173, 173, 173, 0.2);
       box-shadow: 0 2px 5px rgba(173, 173, 173, 0.2);
     }
